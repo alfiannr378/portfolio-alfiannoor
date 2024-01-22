@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfiannoor.id</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark')
+} else {
+    document.documentElement.classList.remove('dark')
+}
+    </script>
+</head>
+<body>
+    <!-- Header section start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="bg-gradient-to-r from-blue-600 from-50% to-blue-900 to-50% bg-clip-text text-transparent font-bold text-lg block py-6">Alfiannoor.id</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                    <nav id="nav-menu" class="hidden absolute py-5 transition bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block
+                    lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-secondary dark:shadow-slate-500 lg:dark:bg-transparent">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class=" text-base text-secondary py-2 mx-8 flex group-hover:text-move dark:text-white">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class=" text-base text-secondary py-2 mx-8 flex group-hover:text-move dark:text-white">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portofolio" class=" text-base text-secondary py-2 mx-8 flex group-hover:text-move dark:text-white">Portfolio</a>
+                            </li>
+                            <!-- <li class="group">
+                                <a href="#sertificate" class=" text-base text-secondary py-2 mx-8 flex group-hover:text-move dark:text-white">Sertificate</a>
+                            </li> -->
+                            <li class="group">
+                                <a href="#skills" class=" text-base text-secondary py-2 mx-8 flex group-hover:text-move dark:text-white">Skills</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" class=" text-base text-secondary py-2 mx-8 flex group-hover:text-move dark:text-white">Contact</a>
+                            </li>
+                            <li class=" flex items-center mt-3 lg:mt-0 pl-8">
+                                <div class="flex">
+                                    <span class="mr-2 text-sm text-slate-500">Light</span>
+                                    <input type="checkbox" name="dark-toggle" id="dark-toggle" class="hidden">
+                                    <label for="dark-toggle">
+                                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                            <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-500 ease-in-out"></div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2 text-sm text-slate-500">Dark</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header section end -->
+    <!-- Hero section start -->
+    <section id="home" class="pt-36 dark:bg-secondary">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="tombol-kontak w-full self-center px-4 lg:w-1/2 mb-16">
+                    <h1 class="judul text-hijau dark:text-darkGreen font-semibold lg:text-xl">Hello World, I am 
+                    </h1>
+                    <span class="nama block font-bold text-secondary text-4xl mt-1 lg:text-5xl dark:text-white">Alfiannoor</span>
+                    <h2 class="work text-secondary font-medium text-lg mb-5 lg:text-2xl dark:text-white">Frontend Developer | IT Support | Administrator</h2>
+                    <p class="deskripsi font-medium text-gray-400 mb-10 leading-relaxed">Welcome to the <span class="text-secondary dark:text-white font-bold">Alfiannoor.id</span> website, a page to develop interest and innovation.
+                    Let's work together to make it happen.</p>
+                    <a href="#contact" class=" text-white py-3 px-8 bg-submit rounded-3xl hover:shadow-lg hover:bg-move transition active:bg-aktif duration-300 ease-in-out">Contact Me</a>
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relative mt-10 lg:mt-9 lg:right-0">
+                        <img src="../src/img/animation-alfian.png" alt="Alfian" class="animasi relative z-10 max-w-full mx-auto">
+                        <span class="latar absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
+                            <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#0e7490" d="M33.9,-15.9C40.3,8.7,39.4,30.8,26.1,41.9C12.8,52.9,-12.8,52.9,-32.1,39.9C-51.3,26.9,-64.2,0.9,-57.8,-23.7C-51.4,-48.3,-25.7,-71.6,-6,-69.6C13.7,-67.7,27.5,-40.5,33.9,-15.9Z" transform="translate(100 100) scale(1.3)"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Hero section end -->
+    <!-- About section start -->
+    <section id="about" class="pt-36 pb-32 dark:bg-secondary">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <h4 class="introductions font-bold text-primary dark:text-darkGreen text-lg mb-3 uppercase">About Me</h4>
+                    <h2 class="introductions font-bold text-secondary dark:text-white text-3xl mb-5 max-w-md lg:text-4xl">Hello World, I'm Alfian usually called Alfi</h2>
+                    <p class="introductions text-gray-500 text-base font-medium max-w-xl lg:text-lg">I graduated from the private college STMIK Banjarbaru, informatics engineering study program. When I was in college, I took part in a robotics UKM and served as a public relations officer in a student organization. Have interest and experience in the fields of IT and administration.</p>
+                </div>
+                <div class="w-full px-4 lg:w-1/2">
+                    <h3 class="icon-sosmed font-semibold text-secondary dark:text-white text-2xl mb-4 lg:text-3xl lg:pt-10">Join with me</h3>
+                    <p class="icon-sosmed font-medium text-base text-gray-500 mb-6 lg:text-lg">To find out the lates news about us, you can follow our social media listed below. Please click the icon image!</p>
+                    <div class="flex items-center">
+                        <!-- instagram -->
+                            <a href="https://www.instagram.com/alfian_nnr/" target="_blank" class="icon-sosmed w-9 h-9 mr-3 flex rounded-full 
+                            items-center  justify-center border border-gray-300 hover:border-fuchsia-400 
+                            hover:bg-gradient-to-br from-yellow-400 from-10% via-red-500 via-30% to-purple-700 to-90% 
+                            hover:text-white hover:animate-bounce dark:text-slate-300">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                            </a>
+                        <!-- github -->
+                        <a href="https://github.com/alfiannr378" target="_blank" class="icon-sosmed w-9 h-9 mr-3 rounded-full 
+                        flex justify-center items-center border border-gray-300 hover:border-slate-300 
+                        hover:bg-slate-800 hover:text-white hover:animate-bounce dark:text-slate-300">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </a>
+                        <!-- linkedin -->
+                        <a href="https://www.linkedin.com/in/alfian-noor-8a860b25a/s" target="_blank" class="icon-sosmed w-9 h-9 mr-3 rounded-full 
+                        flex justify-center items-center border border-gray-300 hover:border-slate-300 
+                        hover:bg-blue-800 hover:text-white hover:animate-bounce dark:text-slate-300">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <!-- dribble -->
+                        <a href="https://dribbble.com/alfiannoor" target="_blank" class="icon-sosmed w-9 h-9 mr-3 rounded-full 
+                        flex justify-center items-center border border-gray-300 hover:border-slate-300 
+                        hover:bg-pink-400 hover:text-white hover:animate-bounce dark:text-slate-300">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dribbble</title><path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"/></svg>
+                        </a>
+                        <!-- youtube -->
+                        <a href="https://www.youtube.com/@teknoin5402" target="_blank" class="icon-sosmed w-9 h-9 mr-3 rounded-full 
+                        flex justify-center items-center border border-gray-300 hover:border-slate-300
+                        hover:bg-yutup hover:text-white hover:animate-bounce dark:text-slate-300">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <!-- tiktok -->
+                        <a href="https://www.youtube.com/@teknoin5402" target="_blank" class="icon-sosmed w-9 h-9 mr-3 rounded-full 
+                        flex justify-center items-center border border-gray-300 hover:border-slate-300
+                        hover:bg-slate-800 hover:text-white hover:animate-bounce dark:text-slate-300">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section end -->
+    <!-- Portofolio section start -->
+    <section id="portofolio" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-primary dark:text-darkGreen text-2xl mb-2" data-aos="fade-right" data-aos-offset="210" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="1500">Portfolio</h4>
+                    <h2 class="font-bold text-3xl text-secondary dark:text-white mb-4 sm:text-4xl lg:text-5xl" data-aos="fade-left" data-aos-offset="210" data-aos-easing="ease-in-sine" data-aos-delay="200" data-aos-duration="1500">Latest Projects</h2>
+                    <p class="font-medium text-base text-gray-500 md:text-lg" data-aos="fade-right" data-aos-offset="210" data-aos-easing="ease-in-sine" data-aos-delay="300" data-aos-duration="1500">Check out some of my latest projects with creative ideas.</p>
+                </div>
+            </div>
+
+            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+                <!-- Image 1 start -->
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="portfolio-img-1 rounded-md shadow-md overflow-hidden">
+                        <img src="../src/img/portofolio/alfiannoor.id.JPG" alt="Alfiannoor.id">
+                    </div>
+                    <h3 class="portfolio-img-1 text-xl text-secondary dark:text-white font-semibold mt-5 mb-3">Website Alfiannoor.id</h3>
+                    <p class="portfolio-img-1 text-base text-gray-500 font-medium">As documentation of the result of a project that has been done.</p>
+                </div>
+                <!-- Image 1 end -->
+                <!-- Image 2 start -->
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="portfolio-img-2 rounded-md shadow-md overflow-hidden">
+                        <img src="../src/img/portofolio/hotel.png" alt="Staycation">
+                    </div>
+                    <h3 class="portfolio-img-2 text-xl text-secondary dark:text-white font-semibold mt-5 mb-3">Booking Hotel</h3>
+                    <p class="portfolio-img-2 text-base text-gray-500 font-medium">Create homepage UI design and product details using figma. The display becomes more interactive and comfortable to use, making it easier for users to use the website.</p>
+                </div>
+                <!-- Image 2 end -->
+                <!-- Image 3 start -->
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="portfolio-img-3 rounded-md shadow-md overflow-hidden">
+                        <img src="../src/img/portofolio/transaction.JPG" alt="Transactions">
+                    </div>
+                    <h3 class="portfolio-img-3 text-xl text-secondary dark:text-white font-semibold mt-5 mb-3">Payment</h3>
+                    <p class="portfolio-img-3 text-base text-gray-500 font-medium">The product payment UI design displays with clear instructions to make it easier for users to carry out transactions.</p>
+                </div>
+                <!-- Image 3 end -->
+                <!-- Image 4 start -->
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="portfolio-img-4 rounded-md shadow-md overflow-hidden">
+                        <img src="../src/img/portofolio/wireframe.JPG" alt="Wireframe">
+                    </div>
+                    <h3 class="portfolio-img-4 text-xl text-secondary dark:text-white font-semibold mt-5 mb-3">Wireframe App</h3>
+                    <p class="portfolio-img-4 text-base text-gray-500 font-medium">The wireframe design display in the money application with several features that make it easier for users to carry out transactions for daily needs.</p>
+                </div>
+                <!-- Image 4 end -->
+            </div>
+        </div>
+    </section>
+    <!-- Portofolio section end -->
+    <!-- Sertificate section start -->
+    <!-- <section id="sertificate" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-primary dark:text-blue-700 text-2xl mb-2">Sertificate</h4>
+                    <h2 class="font-bold text-3xl text-secondary dark:text-white mb-4 sm:text-4xl lg:text-5xl">Latest Sertificate</h2>
+                    <p class="font-medium text-base text-gray-500 md:text-lg">Check out some of my latest projects with creative ideas.</p>
+                </div>
+            </div>
+            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"> -->
+                <!-- Image 1 start -->
+                <!-- <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="../src/img/portofolio/project-1.png" alt="Alfiannoor.id">
+                    </div>
+                    <h3 class="text-xl text-secondary dark:text-white font-semibold mt-5 mb-3">Website Alfiannoor.id</h3>
+                    <p class="text-base text-gray-500 font-medium">As documentation of the result of a project that has been done.</p>
+                </div> -->
+                <!-- Image 1 end -->
+            <!-- </div>
+        </div>
+    </section> -->
+    <!-- Sertificate section end -->
+    <!-- Skills section start -->
+    <section id="skills" class="pt-36 pb-32 bg-slate-700 dark:bg-slate-300">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-16">
+                    <h4 class="cap-skills font-semibold text-indigo-300 dark:text-darkGreen text-2xl mb-2">Skills</h4>
+                    <h2 class="cap-skills font-bold text-3xl text-white dark:text-secondary mb-4 sm:text-4xl lg:text-5xl">Skills I ready have</h2>
+                    <p class="cap-skills font-medium text-base text-gray-500 md:text-lg">The following are the programming languages and frameworks that I have studied.</p>
+                </div>
+            </div>
+            <div class="w-full px-4">
+                <div class="flex flex-wrap items-center justify-center opacity-50">
+                    <span class="icon-skills mx-4 py-4 grayscale lg:mx-6 xl:mx-8">
+                        <img src="../src/img/skills/html5.svg" width="120" alt="HTML">
+                    </span>
+                    <span class="icon-skills mx-4 py-4 grayscale lg:mx-6 xl:mx-8">
+                        <img src="../src/img/skills/css3.svg" width="120" alt="CSS">
+                    </span>
+                    <span class="icon-skills mx-4 py-4 grayscale lg:mx-6 xl:mx-8">
+                        <img src="../src/img/skills/javascript.svg" width="120" alt="Javascript">
+                    </span>
+                    <span class="icon-skills mx-4 py-4 grayscale lg:mx-6 xl:mx-8">
+                        <img src="../src/img/skills/tailwindcss.svg" width="120" alt="Tailwindcss">
+                    </span>
+                    <span class="icon-skills mx-4 py-4 grayscale lg:mx-6 xl:mx-8">
+                        <img src="../src/img/skills/figma.svg" width="120" alt="Figma">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills section end -->
+    <!-- Contact section start -->
+    <section id="contact" class="contact pt-36 pb-32 dark:bg-slate-800">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <!-- <h4 class="font-semibold text-primary dark:text-blue-700 text-2xl mb-2"><%= title %></h4> -->
+                    <h2 class="message-user font-bold text-3xl text-secondary dark:text-white mb-4 sm:text-4xl lg:text-5xl">Contact Us</h2>
+                    <p class="message-user font-medium text-base text-gray-500 md:text-lg">Please send us a message if you have any questions or would like to work with us.</p>
+                </div>
+            </div>
+            
+            <form action="" method="post">
+                <div class="w-full lg:w-2/3 lg:mx-auto">
+                    <div class="message-user w-full px-4">
+                        <label for="name" class="text-base font-bold text-primary dark:text-white">Name</label>
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <input type="text" name="nama" id="name" placeholder="Enter your name.." class="message-user w-full bg-slate-200 text-secondary p-3 rounded-md
+                        focus:outline-none focus:ring-secondary focus:ring-1 focus:border-secondary">
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="email" class="message-user block text-base font-bold text-primary dark:text-white after:content-['*'] after:text-rose-700 after:ml-0.5">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email address.." class="message-user w-full bg-slate-200 text-secondary p-3 rounded-md
+                        focus:outline-none focus:ring-secondary focus:ring-1 focus:border-secondary invalid:text-red-700 invalid:focus:ring-rose-700 invalid:focus:border-rose-700 peer">
+                        <p class="text-base font-bold text-red-700 mt-1 invisible peer-invalid:visible">Email you entered is invalid</p>
+                    </div>
+                    <div class="message-user w-full px-4">
+                        <label for="message" class="text-base font-bold text-primary dark:text-white">Message</label>
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <textarea type="text" name="pesan" placeholder="Enter your message.." id="message" class="message-user w-full bg-slate-200 text-secondary p-3 rounded-md
+                        focus:outline-none focus:ring-secondary focus:ring-1 focus:border-secondary h-32"></textarea>
+                    </div>
+                    <div class="message-user w-full px-4" data-aos-delay="50" data-aos-offset="50">
+                        <button type="submit" class="text-base font-semibold text-white bg-submit py-3 px-8 rounded-full w-full
+                        hover:shadow-lg hover:bg-move transition active:bg-aktif duration-300 ease-in-out">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <!-- Contact section end -->
+    <!-- Footer start -->
+    <footer class="bg-secondary pt-24 pb-12">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+                    <h2 class="font-bold text-4xl text-white mb-5">ALFIAN</h2>
+                    <h3 class="font-bold text-2xl mb-2">Contact Us</h3>
+                    <p>alfianrr378@gmail.com</p>
+                    <p>Jl. H. Mistarcokrokusumo Bati-bati</p>
+                    <p>Tanah Laut</p>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Sosial Media</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="https://www.instagram.com/alfian_nnr/" target="_blank" 
+                            class="inline-block text-base hover:text-submit mb-3">
+                            Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/alfiannr378" target="_blank" 
+                            class="inline-block text-base hover:text-submit mb-3">
+                            Github
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/alfian-noor-8a860b25a/s" target="_blank" 
+                            class="inline-block text-base hover:text-submit mb-3">
+                            LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://dribbble.com/alfiannoor" target="_blank" 
+                            class="inline-block text-base hover:text-submit mb-3">
+                            Dribble
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@teknoin5402" target="_blank" 
+                            class="inline-block text-base hover:text-submit mb-3">
+                            YouTube
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@alfian.nrr" target="_blank" 
+                            class="inline-block text-base hover:text-submit mb-3">
+                            Tiktok
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Link</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#home" 
+                            class="inline-block text-base hover:text-submit mb-3">
+                            Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about"
+                            class="inline-block text-base hover:text-submit mb-3">
+                            About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#portofolio"
+                            class="inline-block text-base hover:text-submit mb-3">
+                            Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#skills"
+                            class="inline-block text-base hover:text-submit mb-3">
+                            Skills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact"
+                            class="inline-block text-base hover:text-submit mb-3">
+                            Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full pt-10 border-t border-slate-700">
+                <div class="flex items-center justify-center mb-5">
+                    <!-- instagram -->
+                        <a href="https://www.instagram.com/alfian_nnr/" target="_blank" class="w-9 h-9 mr-3 flex rounded-full 
+                        items-center  justify-center border border-gray-300 text-slate-300 hover:border-fuchsia-400 
+                        hover:bg-gradient-to-br from-yellow-400 from-10% via-red-500 via-30% to-purple-700 to-90% 
+                        hover:text-white hover:animate-bounce">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                        </a>
+                    <!-- github -->
+                        <a href="https://github.com/alfiannr378" target="_blank" class="w-9 h-9 mr-3 rounded-full 
+                        flex justify-center items-center border border-gray-300 text-slate-300 hover:border-slate-300 
+                        hover:bg-slate-700 hover:text-white hover:animate-bounce">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </a>
+                    <!-- linkedin -->
+                        <a href="https://www.linkedin.com/in/alfian-noor-8a860b25a/s" target="_blank" class="w-9 h-9 mr-3 rounded-full 
+                        flex justify-center items-center border border-gray-300 text-slate-300 hover:border-slate-300 
+                        hover:bg-blue-800 hover:text-white hover:animate-bounce">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    <!-- dribble -->
+                        <a href="https://dribbble.com/alfiannoor" target="_blank" class="w-9 h-9 mr-3 rounded-full 
+                        flex justify-center items-center border border-gray-300 text-slate-300 hover:border-slate-300 
+                        hover:bg-pink-400 hover:text-white hover:animate-bounce">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dribbble</title><path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"/></svg>
+                        </a>
+                    <!-- youtube -->
+                        <a href="https://www.youtube.com/@teknoin5402" target="_blank" class="w-9 h-9 mr-3 rounded-full 
+                        flex justify-center items-center border border-gray-300 text-slate-300 hover:border-slate-300
+                        hover:bg-yutup hover:text-white hover:animate-bounce">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    <!-- tiktok -->
+                        <a href="https://www.tiktok.com/@alfian.nrr" target="_blank" class="w-9 h-9 mr-3 rounded-full 
+                        flex justify-center items-center border border-gray-300 text-slate-300 hover:border-slate-300
+                        hover:bg-slate-800 hover:text-white hover:animate-bounce">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                        </a>
+                </div>
+                <p class="text-slate-300 text-xs font-medium text-center">Create by Alfiannoor 2024 <i class="bi bi-record-fill"></i> All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+    <!-- Back to top start -->
+    <a href="#home" class="fixed z-[9999] bottom-4 right-4 h-14 w-14 bg-submit rounded-full p-4 items-center justify-center
+    hover:bg-move active:bg-aktif hidden" id="scroll-up">
+        <span class="mt-2 ml-[0.5px] block w-5 h-5 rotate-45 border-t-2 border-l-2"></span>
+    </a>
+    <!-- Back to top end -->
+    <script src="../dist/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script>
+        //home section start
+        gsap.from('#home .nama', {duration: 1, y: 50, opacity: 0, delay: 0.5});
+        gsap.from('#home .judul', {duration: 1, y: 50, opacity: 0, delay: 1});
+        gsap.from('#home .work', {duration: 1, y: 50, opacity: 0, delay: 1.2});
+        gsap.from('#home .deskripsi', {duration: 1, y: 50, opacity: 0, delay: 1.4});
+        gsap.from('#home .tombol-kontak', {duration: 1, y: 50, opacity: 0, delay: 1.4});
+        gsap.from('#home .latar', {duration: 1, y: 50, opacity: 0, delay: 1.2});
+        gsap.from('#home .animasi', {duration: 0.8, y: 50, opacity: 0, delay: 1.5});
+        //home section end
+    </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        //about section start
+            const introduction = document.querySelectorAll('.introductions');
+
+            introduction.forEach((say, i) => {
+                say.dataset.aos = 'fade-right';
+                say.dataset.aosDuration = 1500;
+                say.dataset.aosOffset = 210;
+                say.dataset.aosDelay = i * 100;
+            });
+
+            const sosmed = document.querySelectorAll('.icon-sosmed');
+
+            sosmed.forEach((icon, j) => {
+                icon.dataset.aos = 'fade-left';
+                icon.dataset.aosDuration = 1500;
+                icon.dataset.aosOffset = 210;
+                icon.dataset.aosDelay = j * 100;
+            })
+        //about section end
+        //portfolio section start
+            const portfolioSatu = document.querySelectorAll('.portfolio-img-1');
+
+            portfolioSatu.forEach((img, k) => {
+                img.dataset.aos = 'fade-right';
+                img.dataset.aosDuration = 1500;
+                img.dataset.aosOffset = 210;
+                img.dataset.aosDelay = k * 100;
+            });
+
+            const portfolioDua = document.querySelectorAll('.portfolio-img-2');
+
+            portfolioDua.forEach((img, l) => {
+                img.dataset.aos = 'fade-left';
+                img.dataset.aosDuration = 1500;
+                img.dataset.aosOffset = 200;
+                img.dataset.aosDelay = l * 100;
+            });
+
+            const portfolioTiga = document.querySelectorAll('.portfolio-img-3');
+
+            portfolioTiga.forEach((img, m) => {
+                img.dataset.aos = 'fade-right';
+                img.dataset.aosDuration = 1500;
+                img.dataset.aosOffset = 200;
+                img.dataset.aosDelay = m * 100;
+            });
+
+            const portfolioEmpat = document.querySelectorAll('.portfolio-img-4');
+
+            portfolioEmpat.forEach((img, n) => {
+                img.dataset.aos = 'fade-left';
+                img.dataset.aosDuration = 1500;
+                img.dataset.aosOffset = 200;
+                img.dataset.aosDelay = n * 100;
+            });
+        //portfolio section end
+        //skill section start
+        const capSkills = document.querySelectorAll('.cap-skills');
+
+        capSkills.forEach((cap, p) => {
+            cap.dataset.aos = 'fade-down';
+            cap.dataset.aosEasing = 'linear';
+            cap.dataset.aosDuration = 1500;
+            cap.dataset.aosOffset = 100;
+            cap.dataset.aosDelay = p * 100;
+        });
+
+        const iconSkills = document.querySelectorAll('.icon-skills');
+
+        iconSkills.forEach((icn, q) => {
+            icn.dataset.aos = 'fade-left';
+            icn.dataset.aosEasing = 'linear';
+            icn.dataset.aosDuration = 1500;
+            icn.dataset.aosOffset = 210;
+            icn.dataset.aosDelay = q * 300;
+        });
+        //skill section end
+        //message section start
+        const messageUser = document.querySelectorAll('.message-user');
+
+        messageUser.forEach((msg, r) => {
+            msg.dataset.aos = 'fade-right';
+            msg.dataset.aosEasing = 'linear';
+            msg.dataset.aosDuration = 1500;
+            msg.dataset.aosOffset = 210;
+            msg.dataset.aosDelay = r * 50;
+        });
+        //message section end
+        AOS.init({
+            once: true
+        });
+      </script>
+</body>
+</html>
